@@ -1,5 +1,19 @@
 .App {
   text-align: center;
+  background-color: rgb(243, 240, 236);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  width:700px ;
+  margin: auto;
+  flex-direction: column;
+  padding: 3%;
+}
+.heading{
+  font-size: 50px;
+  position: relative;
+ color: #f07443;
+ text-shadow: 2px 2px #212020;
+  font-style: italic;
+  font-family: Franklin Gothic Medium,Franklin Gothic,ITC Franklin Gothic,Arial,sans-serif; 
 }
 
 .App-logo {
@@ -27,7 +41,111 @@
 .App-link {
   color: #61dafb;
 }
+.addTask{
 
+  background-color: rgb(243, 137, 98);
+ width:500px;
+ margin: auto ;
+ border-radius: 5px;
+  display: flex;
+ align-items: center;
+  justify-content: center;
+padding-top: 50px;
+padding-bottom: 50px;
+}
+.addTask input{
+  border-radius: 15px;
+ padding: 10px;
+ font-size: 18px;
+ border: none;
+ margin-right: 100px;
+}
+.addTask button{
+  background-color: whitesmoke;
+  color: rgb(248, 110, 59);
+  font-weight: bolder;
+  border-radius: 10px;
+  padding: 10px;
+ font-size: large;
+  border:none;
+}
+
+.addTask button:hover{
+  cursor: pointer;
+  opacity: 0.7;
+}
+input:focus { 
+  outline: none;
+ 
+}
+.task-name{
+  color:black;
+  font-size: medium;
+  font-weight: 400;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  /* display: inline; */
+  margin: 20px;
+}
+.del-btn{
+  border: none;
+background-color: inherit;
+font-weight: bold;
+  color: #474747;
+}
+.upd-btn{
+  background-color: rgb(50, 103, 209);
+  color: whitesmoke;
+  border:1px solid white;
+  border-radius: 5px;
+padding: 10px;
+}
+.upd-btn:hover{
+  cursor: pointer;
+
+  font-weight: bolder;
+}
+.del-btn:hover{
+  cursor: pointer;
+  padding: 10px;
+  font-weight: bolder;
+}
+.com-btn{
+  border: 1px solid green;
+  border-radius: 5px;
+  padding: 5px;
+background-color: inherit;
+font-weight: bold;
+  
+}
+.com-btn:hover{
+  cursor: pointer;
+
+  font-weight: bolder;
+}
+.list{
+  height: auto;
+  width: 100%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.task{
+  width:500px;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 5px;
+  background-color:whitesmoke;
+  margin-top: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 10px;
+  
+}
+.task:hover{
+  padding: 1px;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +153,7 @@
   to {
     transform: rotate(360deg);
   }
+}
+.taskelement{
+  display: flex;
 }
