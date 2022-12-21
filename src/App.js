@@ -63,6 +63,7 @@ setToDoList(todoList.filter((task)=>task.id!==id));
   return (
     <div className="App">
       <h1 className='heading'>TO DO LIST</h1>
+    <p>.</p>
       <div className="addTask" >
         <input onChange={handleChange}/>
         <button onClick={addTask}>Add Task</button>
